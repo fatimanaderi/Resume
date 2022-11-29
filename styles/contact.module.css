@@ -1,0 +1,162 @@
+.wrapperBgPurple {
+  width: 100%;
+  height: 90vh;
+}
+.wrapperBgPurple .bgPurple {
+  background-color: #a585e2c5;
+  width: 100%;
+  height: 100%;
+  padding-left: 44px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-name: widthElem;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: reverse;
+}
+.bgPurple h1,
+.bgPurple h4,
+.location,
+.date {
+  animation-name: textelem;
+  animation-duration: 0.99s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes textelem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.bgPurple h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.bgPurple h4 {
+  font-family: "Times New Roman", Times, serif;
+}
+@keyframes widthElem {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+@keyframes textelem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.ContactIcon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  animation-name: textelem;
+  animation-duration: 2.1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.eachIcon {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+.eachIcon i {
+  color: #fff;
+  margin-right: 10px;
+}
+.eachIcon p {
+  font-size: 15px;
+  color: rgb(69, 69, 70);
+}
+.eachIcon p a {
+  text-decoration: none;
+  color: rgb(69, 69, 70);
+}
+.contactForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+.contactForm input{
+    margin-top: 30px;
+    border: 0;
+    background-color: #dfdfdf;
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+}
+.contactForm input , .contactForm textarea , .contactForm button{
+    outline: 0;
+    padding: 10px;
+}
+.contactForm ::placeholder{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8f8f92;
+}
+.contactForm textarea{
+    margin-top: 20px;
+    background-color: #dfdfdfad;
+    border: 1px solid #a585e29f;
+    width: 240px;
+    height: 140px;
+    border-radius: 5px;
+}
+.contactForm button{
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #a585e2d2;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+.formall{
+    text-align: center;
+    margin-top: 3vh;
+    color: #6155a6;
+
+}
+@media (max-width: 992px) {
+  .wrapperBgPurple .bgPurple {
+    padding-left: 0;
+    animation-duration: 0.9s;
+  }
+  .wrapperBgPurple {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    height: 60vh;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperBgPurple {
+    margin-top: 20px;
+    width: 98%;
+    margin-left: 1%;
+    height: 60vh;
+    padding-left: 0px;
+  }
+  .eachIcon p{
+      font-size: 13px;
+  }
+}

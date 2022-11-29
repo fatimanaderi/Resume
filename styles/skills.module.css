@@ -1,0 +1,109 @@
+.titleSkill {
+  /* text-align: center; */
+  color: #6155a6;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapperProgress {
+  margin-top: 0px;
+}
+.progress {
+  background: #cfcece;
+  justify-content: flex-start;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  display: flex;
+  height: 15px;
+  width: 70%;
+}
+@keyframes textelem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.progress p {
+  position: absolute;
+  left: 90%;
+  margin-top: 16px;
+  font-size: 12px;
+  animation-name: textelem;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.progressValue {
+  animation: load normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #a685e2;
+  height: 15px;
+  animation-direction: reverse;
+}
+.wrappr {
+  margin-top: 30px;
+}
+.wrappr span {
+  font-size: 14px;
+  color: #686868;
+  transform: translateY(10px);
+}
+.bgsqure {
+  position: absolute;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotate(25deg);
+  border-radius: 15px;
+  background-color: #bba6e2;
+  z-index: -1;
+}
+.bgsqure1 {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotate(75deg);
+  border-radius: 15px;
+  background-color: #bba6e2;
+  z-index: -1;
+}
+.bgsqure2 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotate(15deg);
+  border-radius: 15px;
+  background-color: #bba6e2;
+  z-index: -1;
+}
+
+@keyframes load {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@media (max-width: 992px) {
+  .bgsqure {
+    transform: rotate(25deg) translateY(100px);
+  }
+  .bgsqure1 {
+    display: none;
+  }
+}
+@media (max-width: 786px) {
+  .progress {
+    width: 100%;
+  }
+}

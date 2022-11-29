@@ -1,0 +1,109 @@
+.content {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #a585e2a6;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  animation-name: widthElem;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+@keyframes widthElem {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.content h1 {
+  padding-top: 1vh;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.uni {
+  width: 300px;
+  min-height: 200px;
+  height: auto;
+  padding-bottom: 10px;
+  margin: 5vh auto;
+  border-left: 3px solid #6155a6;
+  animation-name: textelem;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes textelem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.uni i {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.university img {
+  height: 120px;
+  position: absolute;
+  transform: translateX(-50px);
+}
+.university p,
+.school p {
+  position: absolute;
+  margin-left: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.university p {
+  transform: translateY(40px);
+}
+.school p {
+  transform: translateY(-48px);
+}
+.unic {
+  margin-left: 10px;
+  color: #606061;
+  padding-top: 120px;
+}
+.unic1 {
+  margin-left: 10px;
+  color: #606061;
+  padding-top: 20px;
+}
+.nameU {
+  color: #6155a6;
+  font-weight: bold;
+  padding-bottom: 18px;
+}
+.cU {
+  font-size: 15px;
+}
+.date {
+  font-size: 13px;
+  color: #111;
+  font-weight: bold;
+}
+@media (max-width: 450px) {
+  .content {
+    width: 94%;
+    margin-left: 3%;
+    animation-duration: 0s;
+  }
+  .uni {
+    width: 270px;
+    min-height: auto;
+    animation-duration: 0s;
+  }
+ 
+}

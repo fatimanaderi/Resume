@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Samim;
+  src: url("../public/Fonts/Samim.eot");
+  src: url("../public/Fonts/Samim.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../public/Fonts/Samim.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../public/Fonts/Samim.ttf") format("ttf"); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: Vazir !important; */
+  font-family: Samim !important;
+  font-weight: normal;
+  font-style: normal;
+}
+.body {
+  /* background-color: #f1f1f1; */
+  background-color: #e2e1e0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.text-purple {
+  color: #6655bb;
+  font-weight: bold;
+}
+.noactivep {
+  color: #6155a6;
+}
+.text-purple-active {
+  color: #a685e2;
+}
+.linkedin,
+.instagram,
+.envelope,
+.telegram,
+.github,
+.whatsapp {
+  padding: 10px;
+}
+
+.content {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 25vh;
+}
+
+.content1  {
+  width: 90%;
+  margin-right: 10%;
+  height: 100%;
+  height: auto;
+}
+.content2 {
+  width: 90%;
+  margin-left: 10%;
+  height: 100%;
+  height: auto;
+}
+.content4{
+  width: 86%;
+  margin-left: 14%;
+  height: 100%;
+  height: auto;
+}
+@media(max-width : 992px){
+  .content4{
+    width: 80%;
+  margin-left: 19%;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10vh;
+  }
+  .content1 {
+    width: 90%;
+    margin-left:5%;
+  }
+  .content2 ,.content4{
+    margin-left: 5%;
+  }
+}
